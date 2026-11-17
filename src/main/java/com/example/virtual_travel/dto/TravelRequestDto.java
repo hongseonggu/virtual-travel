@@ -7,13 +7,28 @@ import java.util.List;
 @Getter
 @Setter
 public class TravelRequestDto {
-    private String prompt;          // 초기 입력 또는 주관식 입력
-    private String previousStory;   // 직전까지 진행된 스토리 맥락 (선택지 진행 시 사용)
+    private String prompt;
+    private String previousStory;
+    private int currentMoney;
+    private String currentTime;
+    private String currentLocation; // 추가: 현재 위치
+    private String currentWeather;  // 추가: 현재 날씨
 
-    // getters and setters
     public String getPrompt() { return prompt; }
     public void setPrompt(String prompt) { this.prompt = prompt; }
 
     public String getPreviousStory() { return previousStory; }
     public void setPreviousStory(String previousStory) { this.previousStory = previousStory; }
+
+    public int getCurrentMoney() { return currentMoney; }
+    public void setCurrentMoney(int currentMoney) { this.currentMoney = currentMoney; }
+
+    public String getCurrentTime() { return currentTime; }
+    public void setCurrentTime(String currentTime) { this.currentTime = currentTime; }
+
+    public String getCurrentLocation() { return currentLocation; }
+    public void setCurrentLocation(String currentLocation) { this.currentLocation = currentLocation; }
+
+    public String getCurrentWeather() { return currentWeather; }
+    public void setCurrentWeather(String currentWeather) { this.currentWeather = currentWeather; }
 }
